@@ -22,7 +22,7 @@ public sealed class RequiredAttributeDrawer : PropertyDrawer
         {
             RequiredAttribute requiredAttribute = attribute as RequiredAttribute;
             string message = string.IsNullOrEmpty(requiredAttribute.message) ?
-                string.Format(DEFAULT_ERROR_MESSAGE_FORMAT_TEXT, property.name) :
+                string.Format(DEFAULT_ERROR_MESSAGE_FORMAT_TEXT, property.displayName) :
                 requiredAttribute.message;
 
             position.y += position.height + 2f;
