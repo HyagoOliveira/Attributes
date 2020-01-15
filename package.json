@@ -1,0 +1,14 @@
+{
+  "name": "com.actioncode.attributes",
+  "displayName": "ActionCode-Attributes",
+  "version": "0.0.1",
+  "unity": "2018.2",
+  "description": "Property attributes for Unity projects.",
+  "keywords": [
+    "Editor",
+    "Attributes"
+  ],
+  "category": "Editor",
+  "dependencies": {
+  }
+}

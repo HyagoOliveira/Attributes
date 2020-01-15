@@ -1,0 +1,17 @@
+{
+    "name": "ac.attributes-editor",
+    "references": [
+        "GUID:756f810f17dfec54abc9b3899a63acdf"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": []
+}
