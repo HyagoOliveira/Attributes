@@ -1,7 +1,7 @@
 {
     "name": "ac.attributes-editor",
     "references": [
-        "GUID:756f810f17dfec54abc9b3899a63acdf"
+        "ac.attributes"
     ],
     "optionalUnityReferences": [],
     "includePlatforms": [
