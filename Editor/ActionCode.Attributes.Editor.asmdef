@@ -1,7 +1,7 @@
 {
-    "name": "ac.attributes-editor",
+    "name": "ActionCode.Attributes.Editor",
     "references": [
-        "ac.attributes"
+        "ActionCode.Attributes.Runtime"
     ],
     "optionalUnityReferences": [],
     "includePlatforms": [

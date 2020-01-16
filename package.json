@@ -9,6 +9,11 @@
     "Attributes"
   ],
   "category": "Editor",
-  "dependencies": {
-  }
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/nostgameteam/attributes.git"
+  },
+  "author": "Hyago Oliveira",
+  "homepage": "https://bitbucket.org/nostgameteam/attributes#readme"
 }
