@@ -3,7 +3,14 @@
 ### What is this package for? ###
 
 * This package contains a Unity Package for custom property attributes
-* Current Version: 1.0.0	
+* Current Version: 1.0.0
+
+### What can I do with it? ###
+* You can use two custom attributes:
+	* **Required**: use it on strings, exposed and object reference types. If the value is null or empty, a error message will be displayed on Inspector bellow the given attribute.
+	* **Tag**: use it only with a string fields. It'll replace the string field by a tag popup.
+	
+	![Showcase](https://bitbucket.org/nostgameteam/attributes/raw/2faa0df9f19bf41be056bf53ba039660b0b66035/Documentation/unity-package_attributes-showcase.jpg)
 
 ### How do I get set up? ###
 * You can download this repo and place it inside your Unity project (the simplest way).
