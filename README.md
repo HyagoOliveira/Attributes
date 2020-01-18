@@ -24,12 +24,12 @@
 			* The package **ActionCode-Attributes** will be avaliable for you to intall using the **Package Manager** windows.
 		* By **Git URL** (you'll need a **Git client** installed on your machine):
 			* Add this line inside *"dependencies"* node: 
-				* ```"com.actioncode.attributes":"https://bitbucket.org/nostgameteam/attributes.git"**```
+				* ```"com.actioncode.attributes":"https://bitbucket.org/nostgameteam/attributes.git"```
 
 	* For *versions 2017.2* or below: 
 		* Clone/download this repo in any folder on your machine;
 		* Add this line inside *"dependencies"* node: 
-			* ```"com.actioncode.attributes": "*[the-folder-path-you-download-it]*"```
+			* ```"com.actioncode.attributes": "[the-folder-path-you-download-it]"```
 
 ### Who do I talk to? ###
 
