@@ -4,6 +4,7 @@
 
 * This package contains a Unity Package for custom property attributes
 * Current Version: 1.0.0
+* Unity version: 2018.3
 
 ### What can I do with it? ###
 * You can use two custom attributes:
