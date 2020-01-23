@@ -9,7 +9,14 @@
     "properties"   
   ],
   "category": "Property Attributes",
-  "dependencies": {},  
-  "author": "Hyago Oliveira",
-  "homepage": "https://bitbucket.org/nostgameteam/attributes#readme"
+  "dependencies": {},
+  "homepage": "https://bitbucket.org/nostgameteam/attributes#readme",
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:nostgameteam/attributes.git"
+  },
+  "author": {
+    "name": "Hyago Oliveira",
+    "email": "hyagogow@gmail.com"
+  }
 }
