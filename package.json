@@ -5,9 +5,8 @@
   "unity": "2018.3",
   "description": "Property attributes for Unity projects.",
   "keywords": [
-    "Attributes",
-    "Editor",
-    "Properties"   
+    "attributes",
+    "properties"   
   ],
   "category": "Property Attributes",
   "dependencies": {},  
