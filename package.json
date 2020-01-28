@@ -1,7 +1,7 @@
 {
   "name": "com.actioncode.attributes",
   "displayName": "ActionCode-Attributes",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "unity": "2018.3",
   "description": "Property attributes for Unity projects.",
   "keywords": [
@@ -10,10 +10,11 @@
   ],
   "category": "Property Attributes",
   "dependencies": {},
+  "license": "MIT",
   "homepage": "https://bitbucket.org/nostgameteam/attributes#readme",
   "repository": {
     "type": "git",
-    "url": "git@bitbucket.org:nostgameteam/attributes.git"
+    "url": "https://bitbucket.org/nostgameteam/attributes.git"
   },
   "author": {
     "name": "Hyago Oliveira",
