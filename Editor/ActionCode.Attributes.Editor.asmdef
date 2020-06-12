@@ -1,9 +1,8 @@
 {
     "name": "ActionCode.Attributes.Editor",
     "references": [
-        "ActionCode.Attributes.Runtime"
+        "GUID:756f810f17dfec54abc9b3899a63acdf"
     ],
-    "optionalUnityReferences": [],
     "includePlatforms": [
         "Editor"
     ],
@@ -13,5 +12,6 @@
     "precompiledReferences": [],
     "autoReferenced": true,
     "defineConstraints": [],
-    "versionDefines": []
+    "versionDefines": [],
+    "noEngineReferences": false
 }
