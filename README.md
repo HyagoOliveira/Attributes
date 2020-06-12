@@ -10,8 +10,7 @@
 * You can use two custom attributes:
 	* **Required**: use it on strings, exposed and object reference types. If the value is null or empty, a error message will be displayed on Inspector bellow the given attribute.
 	* **Tag**: use it only with a string fields. It'll replace the string field by a tag popup.
-	
-	![Showcase](/Documentation~/unity-package_attributes-showcase.jpg)
+	* ![Attribute Showcase](/Documentation~/unity-package_attributes-showcase.jpg)
 
 ### How do I get set up? ###
 * Using the **Package Registry Server**:
