@@ -3,7 +3,7 @@
 ### What is this package for? ###
 
 * This package contains a Unity Package for custom property attributes
-* Current Version: 1.1.0
+* Current Version: 1.1.1
 * Unity version: 2018.3
 
 ### What can I do with it? ###
