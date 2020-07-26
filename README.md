@@ -1,33 +1,50 @@
 # Attributes
 
-### What is this package for? ###
+* Property attributes for Unity fields
+* Unity minimum version: **2018.3**
+* Current version: **1.1.1**
+* Licence: **MIT**
 
-* This package contains a Unity Package for custom property attributes
-* Current Version: 1.1.1
-* Unity version: 2018.3
+## Summary
 
-### What can I do with it? ###
-* You can use two custom attributes:
-	* **Required**: use it on strings, exposed and object reference types. If the value is null or empty, a error message will be displayed on Inspector bellow the given attribute.
-	* **Tag**: use it only with a string fields. It'll replace the string field by a tag popup.
-	* ![Attribute Showcase](/Documentation~/unity-package_attributes-showcase.jpg)
+## How To Use
+* **AssetsOnly**: only select assets references.
+* **Required**: use it on strings, exposed and object reference types. If the value is null or empty, a error message will be displayed on Inspector bellow the given attribute.
+* **Tag**: use it only with a string fields. It'll replace the string field by a tag popup.
+* ![Attribute Showcase](/Documentation~/unity-package_attributes-showcase.jpg)
 
-### How do I get set up? ###
-* Using the **Package Registry Server**:
-	* Open the **manifest.json** file inside your Unity project's **Packages** folder;
-	* Add this line before *"dependencies"* attribute:
-		* ```"scopedRegistries": [ { "name": "Action Code", "url": "http://34.83.179.179:4873/", "scopes": [ "com.actioncode" ] } ],```
-	* The package **ActionCode-Attributes** will be avaliable for you to intall using the **Package Manager** windows.
-	
-* By **Git URL** (you'll need a **Git client** installed on your machine):
-	* Add this line inside *"dependencies"* attribute: 
-		* ```"com.actioncode.attributes":"https://bitbucket.org/nostgameteam/attributes.git"```
-		
-* Using it as a local package: 
-	* Clone/download this repo in any folder on your machine;
-	* Add this line inside *"dependencies"* attribute: 
-		* ```"com.actioncode.attributes": "[the-folder-path-you-download-it]"```
+## Installation
 
-### Who do I talk to? ###
+### Using the Package Registry Server
 
-* Repo owner and admin: **Hyago Oliveira** (hyagogow@gmail.com)
+Open the **manifest.json** file inside your Unity project's **Packages** folder and add this code-block before `dependencies` attribute:
+
+```json
+"scopedRegistries": [ 
+	{ 
+		"name": "Action Code", 
+		"url": "http://34.83.179.179:4873/", 
+		"scopes": [ "com.actioncode" ] 
+	} 
+],
+```
+
+The package **ActionCode-Attributes** will be available for you to install using the **Package Manager** windows.
+
+### Using the Git URL
+
+You will need a **Git client** installed on your computer with the Path variable already set. 
+
+Use the **Package Manager** "Add package from git URL..." feature or add manually this line inside `dependencies` attribute: 
+
+```json
+"com.actioncode.attributes":"https://bitbucket.org/nostgameteam/attributes.git"
+```
+
+---
+
+**Hyago Oliveira**
+
+[BitBucket](https://bitbucket.org/HyagoGow/) -
+[Unity Connect](https://connect.unity.com/u/hyago-oliveira) -
+<hyagogow@gmail.com>
