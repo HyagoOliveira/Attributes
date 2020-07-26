@@ -1,17 +1,21 @@
 # Attributes
 
 * Property attributes for Unity fields
-* Unity minimum version: **2018.3**
-* Current version: **1.1.1**
+* Unity minimum version: **2019.1**
+* Current version: **1.2.0**
 * Licence: **MIT**
 
 ## Summary
 
 ## How To Use
+
+Just use one of the following attributes:
+
 * **AssetsOnly**: only select assets references.
 * **Required**: use it on strings, exposed and object reference types. If the value is null or empty, a error message will be displayed on Inspector bellow the given attribute.
 * **Tag**: use it only with a string fields. It'll replace the string field by a tag popup.
-* ![Attribute Showcase](/Documentation~/unity-package_attributes-showcase.jpg)
+
+![Attribute Showcase](/Documentation~/unity-package_attributes-showcase.jpg)
 
 ## Installation
 

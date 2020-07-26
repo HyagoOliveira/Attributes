@@ -5,6 +5,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [1.2.0] - 2020-07-26
 ### Added
 - AssetsOnly attribute
 
@@ -33,5 +35,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Add initial files
 - Initial commit
 
-[Unreleased]: https://bitbucket.org/nostgameteam/attributes/branches/compare/1.1.1%0Dmaster
+[Unreleased]: https://bitbucket.org/nostgameteam/attributes/branches/compare/1.2.0%0Dmaster
+[1.2.0]: https://bitbucket.org/nostgameteam/attributes/src/1.2.0/
 [1.1.1]: https://bitbucket.org/nostgameteam/attributes/src/1.1.1/
