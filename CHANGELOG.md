@@ -4,6 +4,10 @@ All notable changes to this package will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+### Added
+- AssetsOnly attribute
+
 ## [1.1.1] - 2020-06-12
 ### Changed
 - Make Editor Assembly Definition file use GUIDs
@@ -23,3 +27,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Add README
 - Add initial files
 - Initial commit
+
+[Unreleased]: https://bitbucket.org/nostgameteam/attributes/branches/compare/1.1.1%0Dmaster
+[1.1.1]: https://bitbucket.org/nostgameteam/attributes/src/1.1.1/
