@@ -10,26 +10,27 @@ namespace ActionCode.Attributes.Editor
     [CustomPropertyDrawer(typeof(RequiredAttribute))]
     public sealed class RequiredAttributeDrawer : PropertyDrawer
     {
-        private bool isValueNull = false;
+        private bool isNullValue = false;
         private const float HELP_BOX_HEIGHT = 32F;
-        private const string DEFAULT_ERROR_MESSAGE_FORMAT_TEXT = "Field '{0}' requires a value!";
 
         public override float GetPropertyHeight(SerializedProperty property, GUIContent label)
         {
-            return base.GetPropertyHeight(property, label) + (isValueNull ? HELP_BOX_HEIGHT + 2f : 0f);
+            return base.GetPropertyHeight(property, label) + GetHelpBoxHeight();
         }
 
         public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
         {
             position.height = base.GetPropertyHeight(property, label);
+
             EditorGUI.PropertyField(position, property, label);
 
-            if (isValueNull = IsPropertyValueNull(property))
+            if (isNullValue = IsPropertyValueNotSet(property))
             {
-                RequiredAttribute requiredAttribute = attribute as RequiredAttribute;
-                string message = string.IsNullOrEmpty(requiredAttribute.message) ?
-                    string.Format(DEFAULT_ERROR_MESSAGE_FORMAT_TEXT, property.displayName) :
-                    requiredAttribute.message;
+                var requiredAttribute = attribute as RequiredAttribute;
+                var hasAttributeMessage = !string.IsNullOrEmpty(requiredAttribute.message);
+                var message = hasAttributeMessage ?
+                    requiredAttribute.message :
+                    string.Format("Field '{0}' requires a value!", property.displayName);
 
                 position.y += position.height + 2f;
                 position.height = HELP_BOX_HEIGHT;
@@ -37,12 +38,17 @@ namespace ActionCode.Attributes.Editor
             }
         }
 
-        private bool IsPropertyValueNull(SerializedProperty property)
+        private bool IsPropertyValueNotSet(SerializedProperty property)
         {
             return
                 property.propertyType == SerializedPropertyType.String && string.IsNullOrEmpty(property.stringValue) ||
                 property.propertyType == SerializedPropertyType.ExposedReference && property.exposedReferenceValue == null ||
                 property.propertyType == SerializedPropertyType.ObjectReference && property.objectReferenceValue == null;
+        }
+
+        private float GetHelpBoxHeight()
+        {
+            return isNullValue ? HELP_BOX_HEIGHT + 2f : 0f;
         }
     }
 }

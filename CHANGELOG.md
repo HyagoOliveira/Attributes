@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - AssetsOnly attribute
 
 ### Changed
+- Improve RequiredAttributeDrawer class
 - Improve TagAttributeDrawer class
 - Improve source code documentation
 
