@@ -10,9 +10,7 @@ namespace ActionCode.Attributes.Editor
     [CustomPropertyDrawer(typeof(TagAttribute))]
     public sealed class TagAttributeDrawer : PropertyDrawer
     {
-        private GUIContent[] tagsContent;
-
-        private const string NOT_STRING_ERROR_FORMAT_MESSAGE = "Field '{0}' should be a string!";
+        private readonly GUIContent[] tagsContent;
 
         public TagAttributeDrawer()
         {
@@ -26,30 +24,44 @@ namespace ActionCode.Attributes.Editor
 
         public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
         {
-            if (property.propertyType == SerializedPropertyType.String)
+            var isString = property.propertyType == SerializedPropertyType.String;
+
+            label = EditorGUI.BeginProperty(position, label, property);
+
+            if (isString)
             {
-                int index = 0;
-                string value = property.stringValue;
-                for (int i = 0; i < tagsContent.Length; i++)
-                {
-                    if (string.Equals(tagsContent[i].text, value))
-                    {
-                        index = i;
-                    }
-                }
-
-                label = EditorGUI.BeginProperty(position, label, property);
-                index = EditorGUI.Popup(position, label, index, tagsContent);
-                EditorGUI.EndProperty();
-
-                property.stringValue = tagsContent[index].text;
+                DisplayTagsPopup(position, property, label);
             }
             else
             {
-                EditorGUI.HelpBox(position,
-                    string.Format(NOT_STRING_ERROR_FORMAT_MESSAGE, property.displayName),
-                    MessageType.Error);
+                position = EditorGUI.PrefixLabel(position, GUIUtility.GetControlID(FocusType.Passive), label);
+                DisplayErrorMessage(position);
             }
+
+            EditorGUI.EndProperty();
+        }
+
+        private void DisplayTagsPopup(Rect position, SerializedProperty property, GUIContent label)
+        {
+            var index = 0;
+            var value = property.stringValue;
+
+            for (int i = 0; i < tagsContent.Length; i++)
+            {
+                if (string.Equals(tagsContent[i].text, value))
+                {
+                    index = i;
+                }
+            }
+
+            index = EditorGUI.Popup(position, label, index, tagsContent);
+            property.stringValue = tagsContent[index].text;
+        }
+
+        private void DisplayErrorMessage(Rect position)
+        {
+            const string message = "This field should be a string!";
+            EditorGUI.HelpBox(position, message, MessageType.Error);
         }
     }
 }
