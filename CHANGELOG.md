@@ -8,6 +8,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 - AssetsOnly attribute
 
+### Changed
+- Improve source code documentation
+
 ## [1.1.1] - 2020-06-12
 ### Changed
 - Make Editor Assembly Definition file use GUIDs

@@ -3,7 +3,6 @@ using UnityEngine;
 
 /// <summary>
 /// Property Attribute for objects that can only select assets references.
-/// <para>There is a custom editor for this class: AssetsOnlyDrawer.</para>
 /// </summary>
 [AttributeUsage(AttributeTargets.Field, AllowMultiple = false, Inherited = true)]
 public class AssetsOnlyAttribute : PropertyAttribute

@@ -3,6 +3,10 @@ using UnityEngine;
 
 namespace ActionCode.Attributes.Editor
 {
+    /// <summary>
+    /// Custom Property Drawer for <see cref="TagAttribute"/>.
+    /// <para>It replaces the string field by a Tag Popup.</para>
+    /// </summary>
     [CustomPropertyDrawer(typeof(TagAttribute))]
     public sealed class TagAttributeDrawer : PropertyDrawer
     {

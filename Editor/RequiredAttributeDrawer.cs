@@ -3,6 +3,10 @@ using UnityEditor;
 
 namespace ActionCode.Attributes.Editor
 {
+    /// <summary>
+    /// Custom Property Drawer for <see cref="RequiredAttribute"/>.
+    /// <para>Draws an error message bellow the attribute if its value is not set, null or empty.</para>
+    /// </summary>
     [CustomPropertyDrawer(typeof(RequiredAttribute))]
     public sealed class RequiredAttributeDrawer : PropertyDrawer
     {
