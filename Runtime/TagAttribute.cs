@@ -2,8 +2,8 @@
 using UnityEngine;
 
 /// <summary>
-/// Tag Property Attribute. Use this attribute with a string field.
-/// <para>It'll replace the string field by a tag popup.</para>
+/// Property Attribute for tags fields. Use it with a string field.
+/// <para>It will replace the string field by a Tag Popup.</para>
 /// </summary>
 [AttributeUsage(AttributeTargets.Field, AllowMultiple = false, Inherited = true)]
 public sealed class TagAttribute : PropertyAttribute
