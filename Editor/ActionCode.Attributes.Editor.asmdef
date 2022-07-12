@@ -1,5 +1,6 @@
 {
     "name": "ActionCode.Attributes.Editor",
+    "rootNamespace": "ActionCode.Attributes.Editor",
     "references": [
         "GUID:756f810f17dfec54abc9b3899a63acdf"
     ],
