@@ -37,6 +37,7 @@ Use the **Package Manager** "Add package from git URL..." feature or add manuall
 
 **Hyago Oliveira**
 
+[GitHub](https://github.com/HyagoOliveira) -
 [BitBucket](https://bitbucket.org/HyagoGow/) -
-[Unity Connect](https://connect.unity.com/u/hyago-oliveira) -
+[LinkedIn](https://www.linkedin.com/in/hyago-oliveira/) -
 <hyagogow@gmail.com>

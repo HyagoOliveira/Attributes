@@ -10,11 +10,13 @@
   ],
   "category": "Property Attributes",
   "license": "MIT",
-  "homepage": "https://bitbucket.org/nostgameteam/attributes#readme",
+  "homepage": "https://github.com/HyagoOliveira/attributes#readme",
   "repository": {
     "type": "git",
-    "url": "https://bitbucket.org/nostgameteam/attributes.git"
+    "url": "https://github.com/HyagoOliveira/attributes.git"
   },
+  "documentationUrl": "https://github.com/HyagoOliveira/attributes#readme",
+  "changelogUrl": "https://github.com/HyagoOliveira/attributes/CHANGELOG.md",
   "author": {
     "name": "Hyago Oliveira",
     "email": "hyagogow@gmail.com"

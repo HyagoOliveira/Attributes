@@ -42,6 +42,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Add initial files
 - Initial commit
 
-[Unreleased]: https://bitbucket.org/nostgameteam/attributes/branches/compare/1.2.0%0Dmaster
-[1.2.0]: https://bitbucket.org/nostgameteam/attributes/src/1.2.0/
-[1.1.1]: https://bitbucket.org/nostgameteam/attributes/src/1.1.1/
+[Unreleased]: https://github.com/HyagoOliveira/attributes/compare/1.2.0...main
+[1.2.0]: https://github.com/HyagoOliveira/attributes/tree/1.2.0/
+[1.1.1]: https://github.com/HyagoOliveira/attributes/tree/1.1.0/
