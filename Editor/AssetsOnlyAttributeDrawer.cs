@@ -8,7 +8,7 @@ namespace ActionCode.Attributes.Editor
     /// <para>It forces to display only assets on object field.</para>
     /// </summary>
     [CustomPropertyDrawer(typeof(AssetsOnlyAttribute))]
-    public class AssetsOnlyDrawer : PropertyDrawer
+    public class AssetsOnlyAttributeDrawer : PropertyDrawer
     {
         private int lineCount = 1;
 
