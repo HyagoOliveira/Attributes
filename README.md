@@ -43,6 +43,19 @@ public sealed class TestBehaviour : MonoBehaviour
 
 ![Show If Attribute Showcase](/Documentation~/attributes-show-if.gif)
 
+* **ReadonlyIf**: use it to disallow changes in properties based on the current state of the object.
+
+```csharp
+public sealed class TestBehaviour : MonoBehaviour
+{
+    public RigidbodyConstraints2D constraint;
+    [ReadonlyIf("constraint", RigidbodyConstraints2D.FreezePositionX)]
+    public float forceX = 10F;
+}
+```
+
+![Readonly If Attribute Showcase](/Documentation~/attributes-readonly-if.gif)
+
 ## Installation
 
 ### Using the Package Registry Server
