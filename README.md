@@ -14,7 +14,7 @@ Just use one of the following attributes:
 * **AssetsOnly**: only select assets references.
 * **Required**: use it on strings, exposed and object reference types. If the value is null or empty, a error message will be displayed on Inspector bellow the given attribute.
 * **Tag**: use it only with a string fields. It'll replace the string field by a tag popup.
-* **DisableInPlayMode**: Use this to prevent users from editing a property when in play mode.
+* **DisableInPlayMode**: use this to prevent users from editing a property when in play mode.
 
 ```csharp
 using UnityEngine;
@@ -28,7 +28,20 @@ public sealed class TestBehaviour : MonoBehaviour
 }
 ```
 
-![Attribute Showcase](/Documentation~/attributes-simple.gif)
+![Attributes](/Documentation~/attributes-simple.gif)
+
+* **ShowIf**: use it to show properties based on the current state of the object.
+
+```csharp
+public sealed class TestBehaviour : MonoBehaviour
+{
+    [Range(0, 20)] public int powerLevel;
+    [ShowIf("powerLevel", LogicalOperatorType.GreaterOrEqual, 10)]
+    public string powerLevelName = "Super Power";
+}
+```
+
+![Show If Attribute Showcase](/Documentation~/attributes-show-if.gif)
 
 ## Installation
 
