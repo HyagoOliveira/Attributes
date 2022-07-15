@@ -14,8 +14,21 @@ Just use one of the following attributes:
 * **AssetsOnly**: only select assets references.
 * **Required**: use it on strings, exposed and object reference types. If the value is null or empty, a error message will be displayed on Inspector bellow the given attribute.
 * **Tag**: use it only with a string fields. It'll replace the string field by a tag popup.
+* **DisableInPlayMode**: Use this to prevent users from editing a property when in play mode.
 
-![Attribute Showcase](/Documentation~/unity-package_attributes-showcase.jpg)
+```csharp
+using UnityEngine;
+using ActionCode.Attributes;
+
+public sealed class TestBehaviour : MonoBehaviour
+{
+    [AssetsOnly(typeof(GameObject))] public GameObject player;
+    [Required] public string playerId;
+    [Tag] public string playerTag = "Player";
+}
+```
+
+![Attribute Showcase](/Documentation~/attributes-simple.gif)
 
 ## Installation
 
