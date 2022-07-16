@@ -2,7 +2,7 @@
 
 * Property attributes for Unity fields
 * Unity minimum version: **2019.1**
-* Current version: **1.2.0**
+* Current version: **2.0.0**
 * Licence: **MIT**
 
 ## Summary
@@ -71,7 +71,6 @@ Use the **Package Manager** "Add package from git URL..." feature or add manuall
 ```json
 "com.actioncode.attributes":"https://bitbucket.org/nostgameteam/attributes.git"
 ```
-
 ---
 
 **Hyago Oliveira**
