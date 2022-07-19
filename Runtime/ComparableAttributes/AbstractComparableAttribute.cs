@@ -26,5 +26,7 @@ namespace ActionCode.Attributes
             this.property = property;
             this.operatorType = operatorType;
         }
+
+        public bool GetBoolValue() => value != null && (bool)value;
     }
 }

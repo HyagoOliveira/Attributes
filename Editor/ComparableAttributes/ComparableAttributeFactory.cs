@@ -10,7 +10,7 @@ namespace ActionCode.Attributes.Editor
             {
                 SerializedPropertyType.Generic => throw new System.NotImplementedException(),
                 SerializedPropertyType.Integer => new ComparableAttribute<int>(property.intValue, (int)attribute.value, attribute.operatorType),
-                SerializedPropertyType.Boolean => new ComparableAttribute<bool>(property.boolValue, (bool)attribute.value, attribute.operatorType),
+                SerializedPropertyType.Boolean => new ComparableAttribute<bool>(property.boolValue, attribute.GetBoolValue(), attribute.operatorType),
                 SerializedPropertyType.Float => new ComparableAttribute<float>(property.floatValue, (float)attribute.value, attribute.operatorType),
                 SerializedPropertyType.String => new ComparableAttribute<string>(property.stringValue, (string)attribute.value, attribute.operatorType),
                 SerializedPropertyType.Color => throw new System.NotImplementedException(),

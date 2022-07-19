@@ -6,6 +6,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ### Changed
+- Fix how to get default boolean values
 - Fix how to find inner properties
 
 ## [2.0.0] - 2022-07-16
