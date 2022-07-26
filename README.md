@@ -12,8 +12,8 @@
 Just use one of the following attributes:
 
 * **AssetsOnly**: only select assets references.
-* **Required**: use it on strings, exposed and object reference types. If the value is null or empty, a error message will be displayed on Inspector bellow the given attribute.
-* **Tag**: use it only with a string fields. It'll replace the string field by a tag popup.
+* **Required**: use it on strings, exposed and object reference types. If the value is null or empty, an error message will be displayed on Inspector bellow the given attribute.
+* **Tag**: use it only with string fields. It'll replace the string field by a tag popup.
 * **DisableInPlayMode**: use this to prevent users from editing a property when in play mode.
 
 ```csharp
