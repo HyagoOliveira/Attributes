@@ -5,6 +5,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [2.1.0] - 2022-09-03
 ### Added
 - CreateButton Attribute
 
@@ -51,7 +53,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Add initial files
 - Initial commit
 
-[Unreleased]: https://github.com/HyagoOliveira/attributes/compare/2.0.1...main
+[Unreleased]: https://github.com/HyagoOliveira/attributes/compare/2.1.0...main
+[2.1.0]: https://github.com/HyagoOliveira/attributes/tree/2.1.0/
 [2.0.1]: https://github.com/HyagoOliveira/attributes/tree/2.0.1/
 [2.0.0]: https://github.com/HyagoOliveira/attributes/tree/2.0.0/
 [1.2.0]: https://github.com/HyagoOliveira/attributes/tree/1.2.0/
