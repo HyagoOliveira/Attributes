@@ -4,8 +4,8 @@ using UnityEngine;
 namespace ActionCode.Attributes
 {
     /// <summary>
-    /// Adds a Create Button if no reference is currently set.
-    /// <para>Use it on <see cref="ScriptableObject"/> attributes.</para>
+    /// Adds a Create Button next to a ScriptableObject field if no reference is set.
+    /// <para>Use it only on <see cref="ScriptableObject"/> fields.</para>
     /// </summary>
     [AttributeUsage(AttributeTargets.Field, AllowMultiple = false)]
     public sealed class CreateButtonAttribute : PropertyAttribute

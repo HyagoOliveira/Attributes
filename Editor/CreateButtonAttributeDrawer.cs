@@ -6,7 +6,7 @@ namespace ActionCode.Attributes.Editor
 {
     /// <summary>
     /// Custom property drawer for <see cref="CreateButtonAttribute"/>.
-    /// <para>Adds a Create Button if no reference is set.</para>
+    /// <para>Adds a Create Button next to a ScriptableObject field if no reference is set.</para>
     /// </summary>
     [CustomPropertyDrawer(typeof(CreateButtonAttribute))]
     public sealed class CreateButtonAttributeDrawer : PropertyDrawer
