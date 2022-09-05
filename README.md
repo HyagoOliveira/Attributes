@@ -85,10 +85,12 @@ Follow the instructions inside [here](https://cutt.ly/ukvj1c8) and the package *
 
 You will need a **Git client** installed on your computer with the Path variable already set. 
 
-Use the **Package Manager** "Add package from git URL..." feature or add manually this line inside `dependencies` attribute: 
+- Use the **Package Manager** "Add package from git URL..." feature and paste this URL: `https://github.com/HyagoOliveira/Attributes.git`
+
+- You can also manually modify you `Packages/manifest.json` file and add this line inside `dependencies` attribute: 
 
 ```json
-"com.actioncode.attributes":"https://bitbucket.org/nostgameteam/attributes.git"
+"com.actioncode.attributes":"https://github.com/HyagoOliveira/Attributes.git"
 ```
 ---
 
