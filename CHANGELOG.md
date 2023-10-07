@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Changed
 - Increase Unity version to 2020.3
 - Rename asdf file ActionCode.Attributes.Runtime -> ActionCode.Attributes
+- Try to draw custom property fields using DisableInPlayMode attribute
 
 ## [2.1.0] - 2022-09-03
 ### Added

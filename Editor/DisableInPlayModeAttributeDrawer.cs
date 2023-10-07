@@ -15,10 +15,10 @@ namespace ActionCode.Attributes.Editor
             if (Application.isPlaying)
             {
                 GUI.enabled = false;
-                EditorGUI.PropertyField(position, property, label);
+                property.TryDrawCustomPropertyField(position, label);
                 GUI.enabled = true;
             }
-            else EditorGUI.PropertyField(position, property, label);
+            else property.TryDrawCustomPropertyField(position, label);
         }
     }
 }
