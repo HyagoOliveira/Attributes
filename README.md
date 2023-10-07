@@ -1,7 +1,7 @@
 # Attributes
 
 * Property attributes for Unity fields
-* Unity minimum version: **2019.1**
+* Unity minimum version: **2020.3**
 * Current version: **2.1.0**
 * Licence: **MIT**
 
