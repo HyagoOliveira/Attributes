@@ -24,7 +24,7 @@ namespace ActionCode.Attributes.Editor
             DrawProperty(comparableField.HasMetCondition(), position, property, label);
         }
 
-        protected abstract void DrawProperty(bool isCoditionMet, Rect position, SerializedProperty property, GUIContent label);
+        protected abstract void DrawProperty(bool isConditionMet, Rect position, SerializedProperty property, GUIContent label);
 
         private SerializedProperty FindPropertyByPath(SerializedProperty property, string name)
         {
