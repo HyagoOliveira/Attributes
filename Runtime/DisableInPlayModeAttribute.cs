@@ -8,6 +8,5 @@ namespace ActionCode.Attributes
     /// <para>Use this to prevent users from editing a property when in play mode.</para>
     /// </summary>
     [AttributeUsage(AttributeTargets.Property | AttributeTargets.Field, AllowMultiple = true)]
-    public sealed class DisableInPlayModeAttribute : PropertyAttribute
-    { }
+    public sealed class DisableInPlayModeAttribute : PropertyAttribute { }
 }

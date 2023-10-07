@@ -8,6 +8,5 @@ namespace ActionCode.Attributes
     /// <para>It will replace the string field by a Tag Popup.</para>
     /// </summary>
     [AttributeUsage(AttributeTargets.Field, AllowMultiple = false, Inherited = true)]
-    public sealed class TagAttribute : PropertyAttribute
-    { }
+    public sealed class TagAttribute : PropertyAttribute { }
 }

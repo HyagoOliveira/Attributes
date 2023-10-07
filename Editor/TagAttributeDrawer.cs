@@ -28,10 +28,7 @@ namespace ActionCode.Attributes.Editor
 
             label = EditorGUI.BeginProperty(position, label, property);
 
-            if (isString)
-            {
-                DisplayTagsPopup(position, property, label);
-            }
+            if (isString) DisplayTagsPopup(position, property, label);
             else
             {
                 position = EditorGUI.PrefixLabel(position, GUIUtility.GetControlID(FocusType.Passive), label);
@@ -49,9 +46,7 @@ namespace ActionCode.Attributes.Editor
             for (int i = 0; i < tagsContent.Length; i++)
             {
                 if (string.Equals(tagsContent[i].text, value))
-                {
                     index = i;
-                }
             }
 
             index = EditorGUI.Popup(position, label, index, tagsContent);
