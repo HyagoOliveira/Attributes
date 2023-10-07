@@ -1,5 +1,5 @@
 {
-    "name": "ActionCode.Attributes.Runtime",
+    "name": "ActionCode.Attributes",
     "rootNamespace": "ActionCode.Attributes",
     "references": [],
     "includePlatforms": [],
