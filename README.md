@@ -38,7 +38,7 @@ using ActionCode.Attributes;
 public sealed class TestBehaviour : MonoBehaviour
 {
     [Range(0, 20)] public int powerLevel;
-    [ShowIf("powerLevel", LogicalOperatorType.GreaterOrEqual, 10)]
+    [ShowIf(nameof(powerLevel), LogicalOperatorType.GreaterOrEqual, 10)]
     public string powerLevelName = "Super Power";
 }
 ```
@@ -53,7 +53,7 @@ using ActionCode.Attributes;
 public sealed class TestBehaviour : MonoBehaviour
 {
     public RigidbodyConstraints2D constraint;
-    [ReadonlyIf("constraint", RigidbodyConstraints2D.FreezePositionX)]
+    [ReadonlyIf(nameof(constraint), RigidbodyConstraints2D.FreezePositionX)]
     public float forceX = 10F;
 }
 ```
