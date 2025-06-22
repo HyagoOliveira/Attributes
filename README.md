@@ -45,7 +45,8 @@ public sealed class TestBehaviour : MonoBehaviour
 
 ![Show If Attribute Showcase](/Documentation~/attributes-show-if.gif)
 
-* **ReadonlyIf**: use it to disallow changes in properties based on the current state of the object.
+* **Readonly**: use it to disable changes in properties.
+* **ReadonlyIf**: use it to not allow changes in properties based on the current state of the object.
 
 ```csharp
 using ActionCode.Attributes;
