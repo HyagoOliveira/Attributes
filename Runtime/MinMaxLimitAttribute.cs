@@ -14,6 +14,7 @@ namespace ActionCode.Attributes
 
         /// <summary>
         /// Attribute for a min/max representation of a slider range.
+        /// <b>Only compatible with Vector2</b>.
         /// </summary>
         /// <remarks>The minimum value of the slider limit is set to 0.</remarks>
         /// <param name="max">The maximum value of the slider limit.</param>
@@ -21,7 +22,8 @@ namespace ActionCode.Attributes
         { }
 
         /// <summary>
-        /// Attribute for a min/max representation of a slider range.
+        /// Attribute for a min/max representation of a slider range. 
+        /// <b>Only compatible with Vector2</b>.
         /// </summary>
         /// <param name="min">The minimum value of the slider limit.</param>
         /// <param name="max">The maximum value of the slider limit.</param>

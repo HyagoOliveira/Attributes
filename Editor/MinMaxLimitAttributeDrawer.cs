@@ -12,6 +12,9 @@ namespace ActionCode.Attributes.Editor
 
         public override VisualElement CreatePropertyGUI(SerializedProperty property)
         {
+            if (property.propertyType != SerializedPropertyType.Vector2)
+                return new HelpBox("MinMaxLimitAttribute is only compatible with Vector2.", HelpBoxMessageType.Error);
+
             var root = asset.Instantiate();
             var label = root.Q<Label>("Label");
             var lowLimit = root.Q<Label>("LowLimit");
@@ -34,13 +37,34 @@ namespace ActionCode.Attributes.Editor
 
             slider.RegisterValueChangedCallback(evt =>
             {
-                lowValue.value = (int)evt.newValue.x;
-                highValue.value = (int)evt.newValue.y;
+                var value = new Vector2(
+                    Round(evt.newValue.x),
+                    Round(evt.newValue.y)
+                );
+                property.vector2Value = value;
+                lowValue.SetValueWithoutNotify(value.x);
+                highValue.SetValueWithoutNotify(value.y);
 
+                property.serializedObject.ApplyModifiedProperties();
+            });
+
+            lowValue.RegisterValueChangedCallback(evt =>
+            {
+                var newValue = Mathf.Clamp(evt.newValue, min, max);
+                property.vector2Value = new Vector2(newValue, property.vector2Value.y);
+                property.serializedObject.ApplyModifiedProperties();
+            });
+
+            highValue.RegisterValueChangedCallback(evt =>
+            {
+                var newValue = Mathf.Clamp(evt.newValue, min, max);
+                property.vector2Value = new Vector2(property.vector2Value.x, newValue);
                 property.serializedObject.ApplyModifiedProperties();
             });
 
             return root;
         }
+
+        private static float Round(float value) => (float)System.Math.Round(value, 1);
     }
 }
