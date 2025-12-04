@@ -75,6 +75,26 @@ public sealed class TestBehaviour : MonoBehaviour
 
 ![Create Button Attribute Showcase](/Documentation~/attributes-create-button.png)
 
+* **MinMaxLimit**: use it to show a min/max representation of a slider range.
+
+```csharp
+using UnityEngine;
+using ActionCode.Attributes;
+
+public sealed class TestBehavior : MonoBehaviour
+{
+    [SerializeField, MinMaxLimit(1f, 8f)]
+    private Vector2 timeInterval = new(2f, 4f);
+
+    public void ShowRandomTime()
+    {
+        print($"Random float interval: ${timeInterval.GetRandom()}");
+        print($"Random integer interval: ${timeInterval.GetRandomInt()}");
+    }
+}
+```
+
+![Min Max](/Documentation~/attributes-min-max.gif)
 
 ## Installation
 
