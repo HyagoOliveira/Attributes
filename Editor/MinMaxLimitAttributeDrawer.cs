@@ -1,8 +1,7 @@
-using System;
 using UnityEditor;
-using UnityEditor.UIElements;
 using UnityEngine;
 using UnityEngine.UIElements;
+using UnityEditor.UIElements;
 
 namespace ActionCode.Attributes.Editor
 {
@@ -41,30 +40,7 @@ namespace ActionCode.Attributes.Editor
                 property.serializedObject.ApplyModifiedProperties();
             });
 
-            /*var limit = (MinMaxLimitAttribute)attribute;
-            var value = GetMinMaxValues(property);
-            var container = new VisualElement();
-            var slider = new MinMaxSlider(
-                property.displayName,
-                value.x,
-                value.y,
-                limit.min,
-                limit.max
-            );*/
-
-            //container.style.flexDirection = FlexDirection.Row;
-            //container.Add(new Label(limit.min.ToString()));
-            //container.Add(slider);
-            //container.Add(new Label(limit.max.ToString()));
-
             return root;
         }
-
-        private static Vector2 GetMinMaxValues(SerializedProperty property) => property.propertyType switch
-        {
-            SerializedPropertyType.Vector2 => property.vector2Value,
-            SerializedPropertyType.Vector2Int => property.vector2IntValue,
-            _ => throw new NotSupportedException($"Property type {property.propertyType} is not supported.")
-        };
     }
 }
