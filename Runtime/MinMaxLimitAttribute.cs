@@ -15,6 +15,14 @@ namespace ActionCode.Attributes
         /// <summary>
         /// Attribute for a min/max representation of a slider range.
         /// </summary>
+        /// <remarks>The minimum value of the slider limit is set to 0.</remarks>
+        /// <param name="max">The maximum value of the slider limit.</param>
+        public MinMaxLimitAttribute(float max) : this(0F, max)
+        { }
+
+        /// <summary>
+        /// Attribute for a min/max representation of a slider range.
+        /// </summary>
         /// <param name="min">The minimum value of the slider limit.</param>
         /// <param name="max">The maximum value of the slider limit.</param>
         public MinMaxLimitAttribute(float min, float max)
