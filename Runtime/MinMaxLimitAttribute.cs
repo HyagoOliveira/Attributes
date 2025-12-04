@@ -9,18 +9,11 @@ namespace ActionCode.Attributes
     [AttributeUsage(AttributeTargets.Field, AllowMultiple = false, Inherited = true)]
     public class MinMaxLimitAttribute : PropertyAttribute
     {
-        /// <summary>
-        /// The minimum value of the slider limit.
-        /// </summary>
-        public readonly float min;
+        private readonly float min;
+        private readonly float max;
 
         /// <summary>
-        /// The maximum value of the slider limit.
-        /// </summary>
-        public readonly float max;
-
-        /// <summary>
-        /// 
+        /// Attribute for a min/max representation of a slider range.
         /// </summary>
         /// <param name="min">The minimum value of the slider limit.</param>
         /// <param name="max">The maximum value of the slider limit.</param>
@@ -29,5 +22,17 @@ namespace ActionCode.Attributes
             this.min = min;
             this.max = max;
         }
+
+        /// <summary>
+        /// The minimum value of the slider limit.
+        /// </summary>
+        /// <returns></returns>
+        public float GetMin() => MathF.Min(min, max);
+
+        /// <summary>
+        /// The maximum value of the slider limit.
+        /// </summary>
+        /// <returns></returns>
+        public float GetMax() => MathF.Max(min, max);
     }
 }

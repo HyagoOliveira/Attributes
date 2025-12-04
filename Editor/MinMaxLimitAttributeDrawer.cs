@@ -21,14 +21,16 @@ namespace ActionCode.Attributes.Editor
             var highValue = root.Q<FloatField>("HighValue");
             var slider = root.Q<MinMaxSlider>("MinMaxSlider");
             var minMaxLimit = attribute as MinMaxLimitAttribute;
+            var min = minMaxLimit.GetMin();
+            var max = minMaxLimit.GetMax();
 
             label.text = property.displayName;
             label.tooltip = property.tooltip;
-            lowLimit.text = minMaxLimit.min.ToString();
-            highLimit.text = minMaxLimit.max.ToString();
+            lowLimit.text = min.ToString();
+            highLimit.text = max.ToString();
 
-            slider.lowLimit = minMaxLimit.min;
-            slider.lowLimit = minMaxLimit.max;
+            slider.lowLimit = min;
+            slider.highLimit = max;
             slider.BindProperty(property);
 
             slider.RegisterValueChangedCallback(evt =>
