@@ -18,7 +18,12 @@ namespace ActionCode.Attributes
         /// Returns a random value between the interval X - Y. Both X and Y are inclusive.
         /// </summary>
         /// <param name="interval"></param>
+        /// <param name="precision">Number of decimal places to round the result.</param>
         /// <returns></returns>
-    	public static float GetRandom(this Vector2 interval) => Random.Range(interval.x, interval.y);
+    	public static float GetRandom(this Vector2 interval, int precision = 2)
+        {
+            var value = Random.Range(interval.x, interval.y);
+            return (float)System.Math.Round(value, precision);
+        }
     }
 }
