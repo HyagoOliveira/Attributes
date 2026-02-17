@@ -1,6 +1,6 @@
 MIT License
 
-Copyright 2020 NOST GAMES, HYAGO OLIVEIRA
+Copyright 2026 NOST GAMES, HYAGO OLIVEIRA
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
