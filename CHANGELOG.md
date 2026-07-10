@@ -5,6 +5,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+## [3.5.0] - 2026-06-10
 ### Changed
 - Update code API to Unity 6.5
 
@@ -81,7 +82,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Add initial files
 - Initial commit
 
-[Unreleased]: https://github.com/HyagoOliveira/attributes/compare/3.4.0...main
+[Unreleased]: https://github.com/HyagoOliveira/attributes/compare/3.5.0...main
+[3.5.0]: https://github.com/HyagoOliveira/attributes/tree/3.5.0/
 [3.4.0]: https://github.com/HyagoOliveira/attributes/tree/3.4.0/
 [3.3.0]: https://github.com/HyagoOliveira/attributes/tree/3.3.0/
 [3.2.0]: https://github.com/HyagoOliveira/attributes/tree/3.2.0/
