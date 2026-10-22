@@ -49,8 +49,10 @@ namespace ActionCode.Attributes.Editor
                     index = i;
             }
 
+            EditorGUI.BeginChangeCheck();
             index = EditorGUI.Popup(position, label, index, tagsContent);
-            property.stringValue = tagsContent[index].text;
+            var hasChanged = EditorGUI.EndChangeCheck();
+            if (hasChanged) property.stringValue = tagsContent[index].text;
         }
 
         private void DisplayErrorMessage(Rect position)

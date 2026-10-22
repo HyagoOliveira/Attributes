@@ -41,8 +41,11 @@ namespace ActionCode.Attributes.Editor
         private void DisplayAssetsOnlyObjectField(Rect position, SerializedProperty property, GUIContent label)
         {
             var asset = attribute as AssetsOnlyAttribute;
-            var reference = property.objectReferenceValue;
-            reference = EditorGUI.ObjectField(position, label, reference, asset.type, false);
+            
+            EditorGUI.BeginChangeCheck();
+            var reference = EditorGUI.ObjectField(position, label, property.objectReferenceValue, asset.type, false);
+            var hasChanged = EditorGUI.EndChangeCheck();
+            if (!hasChanged) return;
 
             if (reference)
             {
