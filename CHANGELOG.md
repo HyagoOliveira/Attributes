@@ -5,6 +5,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+## [3.6.1] - 2026-10-22
 ### Fixed
 - TagAttribute when selecting multiple Prefabs
 - AssetsOnlyAttribute when selecting multiple Prefabs
@@ -90,7 +91,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Add initial files
 - Initial commit
 
-[Unreleased]: https://github.com/HyagoOliveira/attributes/compare/3.6.0...main
+[Unreleased]: https://github.com/HyagoOliveira/attributes/compare/3.6.1...main
+[3.6.1]: https://github.com/HyagoOliveira/attributes/tree/3.6.1/
 [3.6.0]: https://github.com/HyagoOliveira/attributes/tree/3.6.0/
 [3.5.0]: https://github.com/HyagoOliveira/attributes/tree/3.5.0/
 [3.4.0]: https://github.com/HyagoOliveira/attributes/tree/3.4.0/
